@@ -1,0 +1,177 @@
+
+@font-face {
+  font-family:kristenshandbold;
+  src: url(kristenshandBold.ttf);
+}
+/*GLOBALS*/
+body{
+  color: #ffffff;
+  background: url('../img/bg/woodbackground.jpg');
+  max-width: 360px;
+  margin: auto;
+  font-family: kristenshandbold;
+}
+.mainContent{background: url('../img/bg/blackboard.jpg'); height: 575px;}
+.buttonDark{background: rgba(0,0,0,0.80);}
+.buttonLight{background: rgba(0,0,0,0.50);}
+.button{
+  box-shadow: 0px 2px 4px 0px #000000;
+  border-radius: 10px;
+  color: white;
+  width: 77.74px;
+  height: 78.81px;
+  margin: 3px;
+  padding: 0px;
+  float:left;
+  list-style-type:none;
+  font-size: 36px;
+  letter-spacing: 2px;
+  text-align: center;
+  line-height: 77.74px;
+}
+.buttonHolder{margin-left: -26px;}
+.buttonRow{clear:both;}
+.titleBackground{
+  background: rgba(0, 0, 0, 0.30);
+  border: 1px solid #ffffff;
+}
+.title{
+  font-size: 20px;
+  letter-spacing: 0px;
+  text-shadow: 0px 2px 4px #000000;
+}
+.backButton{
+  float: left;
+  clear: both;
+  padding: 10px;
+  margin-top: -8px;
+}
+.titleText{text-align: center;}
+
+/* MAIN */
+#mainTitleBackground{
+  border: 1px solid #ffffff;
+  background: rgba(0, 0, 0, 0.30);
+  margin: auto;
+  margin-top: 0px;
+  padding: 0;
+  width:98%;
+}
+#mainTitle{
+  font-size: 20px;
+  color: white;
+  letter-spacing: 0px;
+  text-align: center;
+  margin: 0;
+  padding: 0px;
+}
+.indexMenu{
+  letter-spacing: 0px;
+  text-shadow: 0px 2px 4px #000000;
+  text-align: center;
+  font-size: 22px;
+}
+.mainShortVowels {margin: 50px 30px 0px -140px;}
+.mainLongVowels {margin: 40px 20px 0px 190px;}
+.mainConsonants{margin: 50px 0px 0px -100px;}
+.mainBlends{margin: 60px 0px 0px 200px;}
+.mainMoreComing{margin: 40px 0px 0px -180px;}
+#mainSoon{margin: 40px 0px 0px 200px;}
+a:active, a:hover, a:link, a:visited {text-decoration: none !important; color: currentColor;}
+
+/* VOWELS */
+.vowelMenu {list-style-type: none; margin: 15px;}
+.lbutton{
+  box-shadow: 0px 2px 4px 0px #000000;
+  border-radius: 10px;
+  width: 60px;
+  height: 60px;
+  margin: 5px;
+  font-size: 40px;
+  letter-spacing: 2px;
+  text-align: center;
+  line-height: 63px;
+  margin-left: -49px;
+}
+.content{float:right;}
+.content img {width: 130px; margin: 30px;}
+.vowelWord{
+  text-align: right;
+  margin: 20px;
+  font-size: 35px;
+  line-height: 30px;
+  text-shadow: 2px 4px 3px #000000;
+}
+
+/* LONG VOWELS */
+.subVmenu{text-align: center; margin-top: 25%;}
+.subButton{
+  box-shadow: 0px 2px 4px 0px #000000;
+  border-radius: 10px;
+  padding: 8px;
+  margin: 5px;
+  font-size: 30px;
+  letter-spacing: 4px;
+}
+
+/* DIALOG BOX */
+#overlay {
+   position: absolute;
+   left: 0px;
+   top: 0px;
+   width:100%;
+   height:100%;
+   text-align:center;
+   z-index: 1000;
+}
+.ovContent {
+   width:300px;
+   margin: 100px auto;
+   background-color: rgba(36, 33, 33, 0.98);
+   padding:12px;
+   text-align:center;
+   line-height: 45px;
+   border-radius: 10px;
+   font-size: 40px;
+}
+.ovContent #close {
+  float: right;
+  background-color: #3835c4;
+  padding: 1px 10px;
+  border-radius: 25%;
+  font-size: 30px;
+}
+.ovContent img {
+  width: 150px;
+  padding: 10px;
+  margin-right: -30px;
+  margin-top: 20px;
+}
+
+/*RESPONSIVE DESIGN*/
+@media screen
+and (min-device-width: 0px) and (max-device-width: 359px){
+  .indexMenu {font-size: 18px;}
+  #mainTitle {font-size: 16px;}
+  .titleText {font-size:18px;}
+  #mainTitleBackground {margin: 8px; width: 95%;}
+  .mainShortVowels {margin: 40px 150px 0px 0px;}
+  .mainLongVowels {margin: 30px 0px 0px 150px;}
+  .mainConsonants {margin: 40px 130px 0px 10px;}
+  .mainBlends {margin: 50px 0px 0px 150px;}
+  .lbutton {width: 50px; height: 50px; font-size: 30px; line-height: 50px;}
+  .content img {width: 130px; margin: 15px;}
+  .vowelWord {font-size: 30px; line-height: 24px;}
+  .subVmenu {margin-top: 25%;}
+  .buttonRow {height: 53px;}
+  .subButton {padding: 7px;}
+  .button {
+    height: 60px;
+    width: 20.5%;
+    font-size: 30px;
+    line-height: 64px;
+    margin: 5px;
+  }
+  .ovContent {width: 261px; margin: 80px auto; font-size: 30px;}
+  .ovContent img {width: 87px;}
+}
